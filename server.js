@@ -1,13 +1,17 @@
 const express = require('express');
+const connectDB = require('./config/db');
 
 const app = express();
+
+//Connect Database
+connectDB();
 
 app.get('/', (req, res) => res.sjson({ msg: 'hi' }));
 
 //Define Routes
-app.user('/api/users', require('./route/users'));
-app.user('/api/auth', require('./route/auth'));
-app.user('/api/contacts', require('./route/contacts'));
+app.use('/api/users', require('./routes/users'));
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/contacts', require('./routes/contacts'));
 
 const PORT = process.env.PORT || 5000;
 

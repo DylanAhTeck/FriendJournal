@@ -35,7 +35,6 @@ router.post(
       if (user) {
         res.status(400).json({ msg: 'User already exists' });
       }
-      console.log('h');
 
       user = new User({
         name,

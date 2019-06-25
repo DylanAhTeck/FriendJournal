@@ -8,6 +8,9 @@ const About = () => {
         {' '}
         This is a full stack React app for keeping memories of friends{' '}
       </p>
+      <p className='bd-dark p'>
+        <strong>Version: </strong> 1.0.0
+      </p>
     </div>
   );
 };

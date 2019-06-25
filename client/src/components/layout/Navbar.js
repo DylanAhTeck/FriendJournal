@@ -1,16 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 const Navbar = ({ title, icon }) => {
   return (
-    <Router>
-      <div className='navbar bg-primary'>
-        <h1>
-          <i className={icon} /> {title}
-        </h1>
-      </div>
-    </Router>
+    <div className='navbar bg-primary'>
+      <h1>
+        <i className={icon} /> {title}
+      </h1>
+      <ul>
+        <h2>
+          <li>
+            <Link to='/'> Home </Link>
+            <Link to='/about'> About </Link>
+          </li>
+        </h2>
+      </ul>
+    </div>
   );
 };
 

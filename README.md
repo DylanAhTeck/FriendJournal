@@ -5,7 +5,7 @@ entries of friends and note particular events we shared.
 
 It's a full-stack app that uses React for the front-end and MongoDB, NodeJS and Express for the back-end. 
 
-## To run of your local machine
+## To run on your local machine
 
 After cloning the repository, create a new MongoDB cluster and add the mongoURI to default.json. 
 
